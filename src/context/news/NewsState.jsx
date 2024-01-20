@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const NewsState = ({ children }) => {
   const API = "https://newsapi.org/v2";
-  const API_KEY = "";
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
